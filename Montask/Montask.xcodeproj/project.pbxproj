@@ -1,0 +1,1020 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21DC07171FD9C251008E0306 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC07161FD9C251008E0306 /* GameScene.swift */; };
+		21DC07191FD9C350008E0306 /* GameMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC07181FD9C350008E0306 /* GameMonster.swift */; };
+		21DC071B1FD9C3BE008E0306 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 21DC071A1FD9C3BE008E0306 /* GameScene.sks */; };
+		21DC071D1FD9C4C4008E0306 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC071C1FD9C4C4008E0306 /* MSButtonNode.swift */; };
+		21DC071F1FD9C530008E0306 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC071E1FD9C530008E0306 /* GameViewController.swift */; };
+		21DC07281FD9C7C2008E0306 /* Victory Restart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07211FD9C7C2008E0306 /* Victory Restart@2x.png */; };
+		21DC07291FD9C7C2008E0306 /* Victory Title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07221FD9C7C2008E0306 /* Victory Title@2x.png */; };
+		21DC072A1FD9C7C2008E0306 /* Defeat Title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07231FD9C7C2008E0306 /* Defeat Title@2x.png */; };
+		21DC072B1FD9C7C2008E0306 /* Victory Main Menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07241FD9C7C2008E0306 /* Victory Main Menu@2x.png */; };
+		21DC072C1FD9C7C2008E0306 /* Target@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07251FD9C7C2008E0306 /* Target@2x.png */; };
+		21DC072D1FD9C7C2008E0306 /* Defeat Main Menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07261FD9C7C2008E0306 /* Defeat Main Menu@2x.png */; };
+		21DC072E1FD9C7C2008E0306 /* Defeat Restart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07271FD9C7C2008E0306 /* Defeat Restart@2x.png */; };
+		21DC07311FD9CFFD008E0306 /* Pirate ship export@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07301FD9CFFD008E0306 /* Pirate ship export@3x.png */; };
+		21DC07331FD9D005008E0306 /* Angry Volcano Export@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07321FD9D005008E0306 /* Angry Volcano Export@3x.png */; };
+		21DC07351FD9D00D008E0306 /* Ghost Export@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07341FD9D00D008E0306 /* Ghost Export@3x.png */; };
+		21DC07371FD9D014008E0306 /* Slime Export@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07361FD9D014008E0306 /* Slime Export@3x.png */; };
+		21DC07391FD9D01B008E0306 /* Eye Export@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07381FD9D01B008E0306 /* Eye Export@3x.png */; };
+		21DC073C1FD9D0AA008E0306 /* Angry Volcano Export@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC073A1FD9D0AA008E0306 /* Angry Volcano Export@2x.png */; };
+		21DC073D1FD9D0AA008E0306 /* Angry Volcano Export.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC073B1FD9D0AA008E0306 /* Angry Volcano Export.png */; };
+		21DC07401FD9D0B6008E0306 /* Eye Export.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC073E1FD9D0B6008E0306 /* Eye Export.png */; };
+		21DC07411FD9D0B6008E0306 /* Eye Export@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC073F1FD9D0B6008E0306 /* Eye Export@2x.png */; };
+		21DC07441FD9D0C0008E0306 /* Ghost Export@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07421FD9D0BF008E0306 /* Ghost Export@2x.png */; };
+		21DC07451FD9D0C0008E0306 /* Ghost Export.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07431FD9D0BF008E0306 /* Ghost Export.png */; };
+		21DC07481FD9D0D5008E0306 /* Pirate ship export.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07461FD9D0D5008E0306 /* Pirate ship export.png */; };
+		21DC07491FD9D0D5008E0306 /* Pirate ship export@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC07471FD9D0D5008E0306 /* Pirate ship export@2x.png */; };
+		21DC074C1FD9D0DD008E0306 /* Slime Export.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC074A1FD9D0DD008E0306 /* Slime Export.png */; };
+		21DC074D1FD9D0DD008E0306 /* Slime Export@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21DC074B1FD9D0DD008E0306 /* Slime Export@2x.png */; };
+		49D000D71065259BCD73C09B /* Pods_MontaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232667BC5E1BCC03809F4E19 /* Pods_MontaskUITests.framework */; };
+		840374A51FD4A95E006382D5 /* FriendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840374A41FD4A95E006382D5 /* FriendRequest.swift */; };
+		840374A71FD4C24B006382D5 /* FriendRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840374A61FD4C24B006382D5 /* FriendRequestTableViewCell.swift */; };
+		840A13A91FCD15B5002F5592 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A13A81FCD15B5002F5592 /* Section.swift */; };
+		840A13AB1FCD160C002F5592 /* TaskTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A13AA1FCD160C002F5592 /* TaskTableViewHeaderFooterView.swift */; };
+		841FD51E1FC6628E00836562 /* MonsterRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841FD51D1FC6628E00836562 /* MonsterRecords.swift */; };
+		841FD5201FC66D0100836562 /* NewMonsterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841FD51F1FC66D0100836562 /* NewMonsterViewController.swift */; };
+		841FD5221FC66D5200836562 /* NewMonsterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841FD5211FC66D5200836562 /* NewMonsterCollectionViewCell.swift */; };
+		841FD5261FC6794A00836562 /* Egg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841FD5251FC6794A00836562 /* Egg.swift */; };
+		843418E91FB0EC8D007D41F1 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843418E81FB0EC8D007D41F1 /* NewTaskViewController.swift */; };
+		843A7DCE1FC10172007A1CA4 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A7DCD1FC10172007A1CA4 /* PersonalViewController.swift */; };
+		843A7DD01FC10406007A1CA4 /* PersonalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A7DCF1FC10406007A1CA4 /* PersonalCollectionViewCell.swift */; };
+		843A7DD21FC10594007A1CA4 /* PersonalCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A7DD11FC10594007A1CA4 /* PersonalCollectionViewHeader.swift */; };
+		843FE45F1FD90AB2004FD485 /* ArenaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FE45E1FD90AB2004FD485 /* ArenaTableViewCell.swift */; };
+		845690561FA8EFE2004A8018 /* BasicAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845690551FA8EFE2004A8018 /* BasicAuth.swift */; };
+		845690581FA903EB004A8018 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845690571FA903EB004A8018 /* TasksViewController.swift */; };
+		8456905A1FA9057F004A8018 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845690591FA9057F004A8018 /* TaskTableViewCell.swift */; };
+		84741D521FB39CA60026C881 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84741D511FB39CA60026C881 /* HelperFunctions.swift */; };
+		847EF0901FD7305C000BEC6A /* NewFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EF08F1FD7305C000BEC6A /* NewFriendViewController.swift */; };
+		8485EE961FA7B58E004581A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485EE951FA7B58E004581A6 /* AppDelegate.swift */; };
+		8485EE9B1FA7B58E004581A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8485EE991FA7B58E004581A6 /* Main.storyboard */; };
+		8485EE9D1FA7B58E004581A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8485EE9C1FA7B58E004581A6 /* Assets.xcassets */; };
+		8485EEA01FA7B58E004581A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8485EE9E1FA7B58E004581A6 /* LaunchScreen.storyboard */; };
+		8485EEAB1FA7B58E004581A6 /* MontaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485EEAA1FA7B58E004581A6 /* MontaskTests.swift */; };
+		8485EEB61FA7B58E004581A6 /* MontaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485EEB51FA7B58E004581A6 /* MontaskUITests.swift */; };
+		8485EEC41FA7B611004581A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485EEC31FA7B611004581A6 /* LoginViewController.swift */; };
+		8485EEC61FA8279B004581A6 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485EEC51FA8279B004581A6 /* Networking.swift */; };
+		8485EEC81FA82F24004581A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485EEC71FA82F24004581A6 /* User.swift */; };
+		8485EECA1FA8EA28004581A6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485EEC91FA8EA28004581A6 /* Task.swift */; };
+		84AD1B721FC612830088C207 /* MonsterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AD1B711FC612830088C207 /* MonsterDetailViewController.swift */; };
+		84C869D11FD909D500102A4F /* ArenaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C869D01FD909D500102A4F /* ArenaViewController.swift */; };
+		84D562F81FB7C62200A19779 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D562F71FB7C62200A19779 /* FriendsViewController.swift */; };
+		84D562FA1FB7C6D300A19779 /* Monsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D562F91FB7C6D200A19779 /* Monsters.swift */; };
+		84D562FD1FB7C8FA00A19779 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D562FC1FB7C8FA00A19779 /* FriendsTableViewCell.swift */; };
+		87FC2D6E6E164DCAC21BA37E /* Pods_Montask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364B2D42EF54DE2ED9B6D2DB /* Pods_Montask.framework */; };
+		9B9041E995772789EDDC2161 /* Pods_MontaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B13E56BB14E568044BBBD05 /* Pods_MontaskTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8485EEA71FA7B58E004581A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8485EE8A1FA7B58E004581A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8485EE911FA7B58E004581A6;
+			remoteInfo = Montask;
+		};
+		8485EEB21FA7B58E004581A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8485EE8A1FA7B58E004581A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8485EE911FA7B58E004581A6;
+			remoteInfo = Montask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05DFAA197CB98898985FBD9E /* Pods-Montask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Montask/Pods-Montask.debug.xcconfig"; sourceTree = "<group>"; };
+		21DC07161FD9C251008E0306 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		21DC07181FD9C350008E0306 /* GameMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMonster.swift; sourceTree = "<group>"; };
+		21DC071A1FD9C3BE008E0306 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		21DC071C1FD9C4C4008E0306 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		21DC071E1FD9C530008E0306 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		21DC07211FD9C7C2008E0306 /* Victory Restart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Victory Restart@2x.png"; sourceTree = "<group>"; };
+		21DC07221FD9C7C2008E0306 /* Victory Title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Victory Title@2x.png"; sourceTree = "<group>"; };
+		21DC07231FD9C7C2008E0306 /* Defeat Title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Defeat Title@2x.png"; sourceTree = "<group>"; };
+		21DC07241FD9C7C2008E0306 /* Victory Main Menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Victory Main Menu@2x.png"; sourceTree = "<group>"; };
+		21DC07251FD9C7C2008E0306 /* Target@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Target@2x.png"; sourceTree = "<group>"; };
+		21DC07261FD9C7C2008E0306 /* Defeat Main Menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Defeat Main Menu@2x.png"; sourceTree = "<group>"; };
+		21DC07271FD9C7C2008E0306 /* Defeat Restart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Defeat Restart@2x.png"; sourceTree = "<group>"; };
+		21DC07301FD9CFFD008E0306 /* Pirate ship export@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pirate ship export@3x.png"; sourceTree = "<group>"; };
+		21DC07321FD9D005008E0306 /* Angry Volcano Export@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Angry Volcano Export@3x.png"; sourceTree = "<group>"; };
+		21DC07341FD9D00D008E0306 /* Ghost Export@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ghost Export@3x.png"; sourceTree = "<group>"; };
+		21DC07361FD9D014008E0306 /* Slime Export@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Slime Export@3x.png"; sourceTree = "<group>"; };
+		21DC07381FD9D01B008E0306 /* Eye Export@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eye Export@3x.png"; sourceTree = "<group>"; };
+		21DC073A1FD9D0AA008E0306 /* Angry Volcano Export@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Angry Volcano Export@2x.png"; sourceTree = "<group>"; };
+		21DC073B1FD9D0AA008E0306 /* Angry Volcano Export.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Angry Volcano Export.png"; sourceTree = "<group>"; };
+		21DC073E1FD9D0B6008E0306 /* Eye Export.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eye Export.png"; sourceTree = "<group>"; };
+		21DC073F1FD9D0B6008E0306 /* Eye Export@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eye Export@2x.png"; sourceTree = "<group>"; };
+		21DC07421FD9D0BF008E0306 /* Ghost Export@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ghost Export@2x.png"; sourceTree = "<group>"; };
+		21DC07431FD9D0BF008E0306 /* Ghost Export.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ghost Export.png"; sourceTree = "<group>"; };
+		21DC07461FD9D0D5008E0306 /* Pirate ship export.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pirate ship export.png"; sourceTree = "<group>"; };
+		21DC07471FD9D0D5008E0306 /* Pirate ship export@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pirate ship export@2x.png"; sourceTree = "<group>"; };
+		21DC074A1FD9D0DD008E0306 /* Slime Export.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Slime Export.png"; sourceTree = "<group>"; };
+		21DC074B1FD9D0DD008E0306 /* Slime Export@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Slime Export@2x.png"; sourceTree = "<group>"; };
+		232667BC5E1BCC03809F4E19 /* Pods_MontaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MontaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		364B2D42EF54DE2ED9B6D2DB /* Pods_Montask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Montask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		499BC544351DA31CB61DCA63 /* Pods-MontaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MontaskUITests/Pods-MontaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C2AD09BF239B67ACA803336 /* Pods-MontaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MontaskTests/Pods-MontaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		840374A41FD4A95E006382D5 /* FriendRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequest.swift; sourceTree = "<group>"; };
+		840374A61FD4C24B006382D5 /* FriendRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestTableViewCell.swift; sourceTree = "<group>"; };
+		840A13A81FCD15B5002F5592 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		840A13AA1FCD160C002F5592 /* TaskTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		841FD51D1FC6628E00836562 /* MonsterRecords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterRecords.swift; sourceTree = "<group>"; };
+		841FD51F1FC66D0100836562 /* NewMonsterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMonsterViewController.swift; sourceTree = "<group>"; };
+		841FD5211FC66D5200836562 /* NewMonsterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMonsterCollectionViewCell.swift; sourceTree = "<group>"; };
+		841FD5251FC6794A00836562 /* Egg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Egg.swift; sourceTree = "<group>"; };
+		843418E81FB0EC8D007D41F1 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		843A7DCD1FC10172007A1CA4 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		843A7DCF1FC10406007A1CA4 /* PersonalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCollectionViewCell.swift; sourceTree = "<group>"; };
+		843A7DD11FC10594007A1CA4 /* PersonalCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCollectionViewHeader.swift; sourceTree = "<group>"; };
+		843FE45E1FD90AB2004FD485 /* ArenaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaTableViewCell.swift; sourceTree = "<group>"; };
+		845690551FA8EFE2004A8018 /* BasicAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAuth.swift; sourceTree = "<group>"; };
+		845690571FA903EB004A8018 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		845690591FA9057F004A8018 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		84741D511FB39CA60026C881 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		847EF08F1FD7305C000BEC6A /* NewFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendViewController.swift; sourceTree = "<group>"; };
+		8485EE921FA7B58E004581A6 /* Montask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Montask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8485EE951FA7B58E004581A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8485EE9A1FA7B58E004581A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8485EE9C1FA7B58E004581A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8485EE9F1FA7B58E004581A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8485EEA11FA7B58E004581A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8485EEA61FA7B58E004581A6 /* MontaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MontaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8485EEAA1FA7B58E004581A6 /* MontaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontaskTests.swift; sourceTree = "<group>"; };
+		8485EEAC1FA7B58E004581A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8485EEB11FA7B58E004581A6 /* MontaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MontaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8485EEB51FA7B58E004581A6 /* MontaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontaskUITests.swift; sourceTree = "<group>"; };
+		8485EEB71FA7B58E004581A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8485EEC31FA7B611004581A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8485EEC51FA8279B004581A6 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		8485EEC71FA82F24004581A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8485EEC91FA8EA28004581A6 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		84AD1B711FC612830088C207 /* MonsterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDetailViewController.swift; sourceTree = "<group>"; };
+		84C869D01FD909D500102A4F /* ArenaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArenaViewController.swift; sourceTree = "<group>"; };
+		84D562F71FB7C62200A19779 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		84D562F91FB7C6D200A19779 /* Monsters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monsters.swift; sourceTree = "<group>"; };
+		84D562FC1FB7C8FA00A19779 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		9458112FBEFD8B1823D657A1 /* Pods-Montask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montask.release.xcconfig"; path = "Pods/Target Support Files/Pods-Montask/Pods-Montask.release.xcconfig"; sourceTree = "<group>"; };
+		9B13E56BB14E568044BBBD05 /* Pods_MontaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MontaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AAF32B9669D13DCB8757F2 /* Pods-MontaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MontaskTests/Pods-MontaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC2C0D9BB2203B3A50FE41F5 /* Pods-MontaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MontaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MontaskUITests/Pods-MontaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8485EE8F1FA7B58E004581A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87FC2D6E6E164DCAC21BA37E /* Pods_Montask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8485EEA31FA7B58E004581A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9041E995772789EDDC2161 /* Pods_MontaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8485EEAE1FA7B58E004581A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D000D71065259BCD73C09B /* Pods_MontaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21DC07201FD9C790008E0306 /* gameTextures */ = {
+			isa = PBXGroup;
+			children = (
+				21DC07261FD9C7C2008E0306 /* Defeat Main Menu@2x.png */,
+				21DC07271FD9C7C2008E0306 /* Defeat Restart@2x.png */,
+				21DC07231FD9C7C2008E0306 /* Defeat Title@2x.png */,
+				21DC07251FD9C7C2008E0306 /* Target@2x.png */,
+				21DC07241FD9C7C2008E0306 /* Victory Main Menu@2x.png */,
+				21DC07211FD9C7C2008E0306 /* Victory Restart@2x.png */,
+				21DC07221FD9C7C2008E0306 /* Victory Title@2x.png */,
+			);
+			path = gameTextures;
+			sourceTree = "<group>";
+		};
+		21DC072F1FD9CFDE008E0306 /* monsterImages */ = {
+			isa = PBXGroup;
+			children = (
+				21DC07461FD9D0D5008E0306 /* Pirate ship export.png */,
+				21DC07471FD9D0D5008E0306 /* Pirate ship export@2x.png */,
+				21DC07301FD9CFFD008E0306 /* Pirate ship export@3x.png */,
+				21DC073E1FD9D0B6008E0306 /* Eye Export.png */,
+				21DC073F1FD9D0B6008E0306 /* Eye Export@2x.png */,
+				21DC07381FD9D01B008E0306 /* Eye Export@3x.png */,
+				21DC07431FD9D0BF008E0306 /* Ghost Export.png */,
+				21DC07421FD9D0BF008E0306 /* Ghost Export@2x.png */,
+				21DC07341FD9D00D008E0306 /* Ghost Export@3x.png */,
+				21DC074A1FD9D0DD008E0306 /* Slime Export.png */,
+				21DC074B1FD9D0DD008E0306 /* Slime Export@2x.png */,
+				21DC07361FD9D014008E0306 /* Slime Export@3x.png */,
+				21DC073B1FD9D0AA008E0306 /* Angry Volcano Export.png */,
+				21DC073A1FD9D0AA008E0306 /* Angry Volcano Export@2x.png */,
+				21DC07321FD9D005008E0306 /* Angry Volcano Export@3x.png */,
+			);
+			path = monsterImages;
+			sourceTree = "<group>";
+		};
+		38EB8F4509A5E6FF6DF2A891 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05DFAA197CB98898985FBD9E /* Pods-Montask.debug.xcconfig */,
+				9458112FBEFD8B1823D657A1 /* Pods-Montask.release.xcconfig */,
+				5C2AD09BF239B67ACA803336 /* Pods-MontaskTests.debug.xcconfig */,
+				A1AAF32B9669D13DCB8757F2 /* Pods-MontaskTests.release.xcconfig */,
+				499BC544351DA31CB61DCA63 /* Pods-MontaskUITests.debug.xcconfig */,
+				CC2C0D9BB2203B3A50FE41F5 /* Pods-MontaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8485EE891FA7B58E004581A6 = {
+			isa = PBXGroup;
+			children = (
+				8485EE941FA7B58E004581A6 /* Montask */,
+				8485EEA91FA7B58E004581A6 /* MontaskTests */,
+				8485EEB41FA7B58E004581A6 /* MontaskUITests */,
+				8485EE931FA7B58E004581A6 /* Products */,
+				38EB8F4509A5E6FF6DF2A891 /* Pods */,
+				CA903D3774DC38BD953D6E35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8485EE931FA7B58E004581A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8485EE921FA7B58E004581A6 /* Montask.app */,
+				8485EEA61FA7B58E004581A6 /* MontaskTests.xctest */,
+				8485EEB11FA7B58E004581A6 /* MontaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8485EE941FA7B58E004581A6 /* Montask */ = {
+			isa = PBXGroup;
+			children = (
+				21DC072F1FD9CFDE008E0306 /* monsterImages */,
+				21DC07201FD9C790008E0306 /* gameTextures */,
+				8485EE951FA7B58E004581A6 /* AppDelegate.swift */,
+				21DC071C1FD9C4C4008E0306 /* MSButtonNode.swift */,
+				21DC071A1FD9C3BE008E0306 /* GameScene.sks */,
+				8485EE991FA7B58E004581A6 /* Main.storyboard */,
+				84D562F51FB7C5F600A19779 /* ViewControllers */,
+				84741D511FB39CA60026C881 /* HelperFunctions.swift */,
+				84D562FB1FB7C8E200A19779 /* Cells */,
+				8485EEC51FA8279B004581A6 /* Networking.swift */,
+				845690551FA8EFE2004A8018 /* BasicAuth.swift */,
+				841FD51D1FC6628E00836562 /* MonsterRecords.swift */,
+				84D562F61FB7C60800A19779 /* Models */,
+				8485EE9C1FA7B58E004581A6 /* Assets.xcassets */,
+				8485EE9E1FA7B58E004581A6 /* LaunchScreen.storyboard */,
+				8485EEA11FA7B58E004581A6 /* Info.plist */,
+			);
+			path = Montask;
+			sourceTree = "<group>";
+		};
+		8485EEA91FA7B58E004581A6 /* MontaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				8485EEAA1FA7B58E004581A6 /* MontaskTests.swift */,
+				8485EEAC1FA7B58E004581A6 /* Info.plist */,
+			);
+			path = MontaskTests;
+			sourceTree = "<group>";
+		};
+		8485EEB41FA7B58E004581A6 /* MontaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8485EEB51FA7B58E004581A6 /* MontaskUITests.swift */,
+				8485EEB71FA7B58E004581A6 /* Info.plist */,
+			);
+			path = MontaskUITests;
+			sourceTree = "<group>";
+		};
+		84D562F51FB7C5F600A19779 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8485EEC31FA7B611004581A6 /* LoginViewController.swift */,
+				845690571FA903EB004A8018 /* TasksViewController.swift */,
+				843418E81FB0EC8D007D41F1 /* NewTaskViewController.swift */,
+				84D562F71FB7C62200A19779 /* FriendsViewController.swift */,
+				843A7DCD1FC10172007A1CA4 /* PersonalViewController.swift */,
+				84AD1B711FC612830088C207 /* MonsterDetailViewController.swift */,
+				841FD51F1FC66D0100836562 /* NewMonsterViewController.swift */,
+				847EF08F1FD7305C000BEC6A /* NewFriendViewController.swift */,
+				84C869D01FD909D500102A4F /* ArenaViewController.swift */,
+				21DC07161FD9C251008E0306 /* GameScene.swift */,
+				21DC071E1FD9C530008E0306 /* GameViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84D562F61FB7C60800A19779 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8485EEC71FA82F24004581A6 /* User.swift */,
+				840374A41FD4A95E006382D5 /* FriendRequest.swift */,
+				8485EEC91FA8EA28004581A6 /* Task.swift */,
+				84D562F91FB7C6D200A19779 /* Monsters.swift */,
+				841FD5251FC6794A00836562 /* Egg.swift */,
+				840A13A81FCD15B5002F5592 /* Section.swift */,
+				21DC07181FD9C350008E0306 /* GameMonster.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84D562FB1FB7C8E200A19779 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				845690591FA9057F004A8018 /* TaskTableViewCell.swift */,
+				840A13AA1FCD160C002F5592 /* TaskTableViewHeaderFooterView.swift */,
+				84D562FC1FB7C8FA00A19779 /* FriendsTableViewCell.swift */,
+				840374A61FD4C24B006382D5 /* FriendRequestTableViewCell.swift */,
+				843A7DCF1FC10406007A1CA4 /* PersonalCollectionViewCell.swift */,
+				843A7DD11FC10594007A1CA4 /* PersonalCollectionViewHeader.swift */,
+				841FD5211FC66D5200836562 /* NewMonsterCollectionViewCell.swift */,
+				843FE45E1FD90AB2004FD485 /* ArenaTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CA903D3774DC38BD953D6E35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				364B2D42EF54DE2ED9B6D2DB /* Pods_Montask.framework */,
+				9B13E56BB14E568044BBBD05 /* Pods_MontaskTests.framework */,
+				232667BC5E1BCC03809F4E19 /* Pods_MontaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8485EE911FA7B58E004581A6 /* Montask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8485EEBA1FA7B58E004581A6 /* Build configuration list for PBXNativeTarget "Montask" */;
+			buildPhases = (
+				401A400F43A4C4E091744215 /* [CP] Check Pods Manifest.lock */,
+				8485EE8E1FA7B58E004581A6 /* Sources */,
+				8485EE8F1FA7B58E004581A6 /* Frameworks */,
+				8485EE901FA7B58E004581A6 /* Resources */,
+				7EBC5A9DE8E4D7B5765EC5B2 /* [CP] Embed Pods Frameworks */,
+				9A965538BCDB542A8700796D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Montask;
+			productName = Montask;
+			productReference = 8485EE921FA7B58E004581A6 /* Montask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8485EEA51FA7B58E004581A6 /* MontaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8485EEBD1FA7B58E004581A6 /* Build configuration list for PBXNativeTarget "MontaskTests" */;
+			buildPhases = (
+				E69F21F788BDE828990F0C75 /* [CP] Check Pods Manifest.lock */,
+				8485EEA21FA7B58E004581A6 /* Sources */,
+				8485EEA31FA7B58E004581A6 /* Frameworks */,
+				8485EEA41FA7B58E004581A6 /* Resources */,
+				2F9D701E33DA0D77FE9CE98F /* [CP] Embed Pods Frameworks */,
+				CA146C4912B2F2825D352ACE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8485EEA81FA7B58E004581A6 /* PBXTargetDependency */,
+			);
+			name = MontaskTests;
+			productName = MontaskTests;
+			productReference = 8485EEA61FA7B58E004581A6 /* MontaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8485EEB01FA7B58E004581A6 /* MontaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8485EEC01FA7B58E004581A6 /* Build configuration list for PBXNativeTarget "MontaskUITests" */;
+			buildPhases = (
+				D37B2D4A01CB0AE2BBE8ADA3 /* [CP] Check Pods Manifest.lock */,
+				8485EEAD1FA7B58E004581A6 /* Sources */,
+				8485EEAE1FA7B58E004581A6 /* Frameworks */,
+				8485EEAF1FA7B58E004581A6 /* Resources */,
+				8E752217E65E77B13B18BD98 /* [CP] Embed Pods Frameworks */,
+				CDF2D4BFCCBABE5D4D008FA0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8485EEB31FA7B58E004581A6 /* PBXTargetDependency */,
+			);
+			name = MontaskUITests;
+			productName = MontaskUITests;
+			productReference = 8485EEB11FA7B58E004581A6 /* MontaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8485EE8A1FA7B58E004581A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Sunny Ouyang";
+				TargetAttributes = {
+					8485EE911FA7B58E004581A6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					8485EEA51FA7B58E004581A6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8485EE911FA7B58E004581A6;
+					};
+					8485EEB01FA7B58E004581A6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8485EE911FA7B58E004581A6;
+					};
+				};
+			};
+			buildConfigurationList = 8485EE8D1FA7B58E004581A6 /* Build configuration list for PBXProject "Montask" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8485EE891FA7B58E004581A6;
+			productRefGroup = 8485EE931FA7B58E004581A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8485EE911FA7B58E004581A6 /* Montask */,
+				8485EEA51FA7B58E004581A6 /* MontaskTests */,
+				8485EEB01FA7B58E004581A6 /* MontaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8485EE901FA7B58E004581A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21DC072A1FD9C7C2008E0306 /* Defeat Title@2x.png in Resources */,
+				21DC07491FD9D0D5008E0306 /* Pirate ship export@2x.png in Resources */,
+				21DC072E1FD9C7C2008E0306 /* Defeat Restart@2x.png in Resources */,
+				21DC071B1FD9C3BE008E0306 /* GameScene.sks in Resources */,
+				21DC07281FD9C7C2008E0306 /* Victory Restart@2x.png in Resources */,
+				21DC074C1FD9D0DD008E0306 /* Slime Export.png in Resources */,
+				21DC07391FD9D01B008E0306 /* Eye Export@3x.png in Resources */,
+				21DC07371FD9D014008E0306 /* Slime Export@3x.png in Resources */,
+				21DC07331FD9D005008E0306 /* Angry Volcano Export@3x.png in Resources */,
+				8485EEA01FA7B58E004581A6 /* LaunchScreen.storyboard in Resources */,
+				21DC074D1FD9D0DD008E0306 /* Slime Export@2x.png in Resources */,
+				21DC07451FD9D0C0008E0306 /* Ghost Export.png in Resources */,
+				8485EE9D1FA7B58E004581A6 /* Assets.xcassets in Resources */,
+				8485EE9B1FA7B58E004581A6 /* Main.storyboard in Resources */,
+				21DC07351FD9D00D008E0306 /* Ghost Export@3x.png in Resources */,
+				21DC07291FD9C7C2008E0306 /* Victory Title@2x.png in Resources */,
+				21DC072D1FD9C7C2008E0306 /* Defeat Main Menu@2x.png in Resources */,
+				21DC072C1FD9C7C2008E0306 /* Target@2x.png in Resources */,
+				21DC07481FD9D0D5008E0306 /* Pirate ship export.png in Resources */,
+				21DC07401FD9D0B6008E0306 /* Eye Export.png in Resources */,
+				21DC07411FD9D0B6008E0306 /* Eye Export@2x.png in Resources */,
+				21DC07311FD9CFFD008E0306 /* Pirate ship export@3x.png in Resources */,
+				21DC073C1FD9D0AA008E0306 /* Angry Volcano Export@2x.png in Resources */,
+				21DC073D1FD9D0AA008E0306 /* Angry Volcano Export.png in Resources */,
+				21DC072B1FD9C7C2008E0306 /* Victory Main Menu@2x.png in Resources */,
+				21DC07441FD9D0C0008E0306 /* Ghost Export@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8485EEA41FA7B58E004581A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8485EEAF1FA7B58E004581A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F9D701E33DA0D77FE9CE98F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MontaskTests/Pods-MontaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		401A400F43A4C4E091744215 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Montask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EBC5A9DE8E4D7B5765EC5B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Montask/Pods-Montask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Montask/Pods-Montask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E752217E65E77B13B18BD98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MontaskUITests/Pods-MontaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A965538BCDB542A8700796D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Montask/Pods-Montask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA146C4912B2F2825D352ACE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MontaskTests/Pods-MontaskTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDF2D4BFCCBABE5D4D008FA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MontaskUITests/Pods-MontaskUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D37B2D4A01CB0AE2BBE8ADA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MontaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E69F21F788BDE828990F0C75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MontaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8485EE8E1FA7B58E004581A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AD1B721FC612830088C207 /* MonsterDetailViewController.swift in Sources */,
+				840A13AB1FCD160C002F5592 /* TaskTableViewHeaderFooterView.swift in Sources */,
+				8456905A1FA9057F004A8018 /* TaskTableViewCell.swift in Sources */,
+				21DC07171FD9C251008E0306 /* GameScene.swift in Sources */,
+				84C869D11FD909D500102A4F /* ArenaViewController.swift in Sources */,
+				843A7DCE1FC10172007A1CA4 /* PersonalViewController.swift in Sources */,
+				841FD51E1FC6628E00836562 /* MonsterRecords.swift in Sources */,
+				8485EEC81FA82F24004581A6 /* User.swift in Sources */,
+				21DC07191FD9C350008E0306 /* GameMonster.swift in Sources */,
+				841FD5201FC66D0100836562 /* NewMonsterViewController.swift in Sources */,
+				8485EEC61FA8279B004581A6 /* Networking.swift in Sources */,
+				8485EECA1FA8EA28004581A6 /* Task.swift in Sources */,
+				21DC071F1FD9C530008E0306 /* GameViewController.swift in Sources */,
+				84D562FD1FB7C8FA00A19779 /* FriendsTableViewCell.swift in Sources */,
+				843418E91FB0EC8D007D41F1 /* NewTaskViewController.swift in Sources */,
+				84741D521FB39CA60026C881 /* HelperFunctions.swift in Sources */,
+				843FE45F1FD90AB2004FD485 /* ArenaTableViewCell.swift in Sources */,
+				841FD5221FC66D5200836562 /* NewMonsterCollectionViewCell.swift in Sources */,
+				21DC071D1FD9C4C4008E0306 /* MSButtonNode.swift in Sources */,
+				847EF0901FD7305C000BEC6A /* NewFriendViewController.swift in Sources */,
+				84D562F81FB7C62200A19779 /* FriendsViewController.swift in Sources */,
+				845690581FA903EB004A8018 /* TasksViewController.swift in Sources */,
+				84D562FA1FB7C6D300A19779 /* Monsters.swift in Sources */,
+				840A13A91FCD15B5002F5592 /* Section.swift in Sources */,
+				843A7DD01FC10406007A1CA4 /* PersonalCollectionViewCell.swift in Sources */,
+				840374A71FD4C24B006382D5 /* FriendRequestTableViewCell.swift in Sources */,
+				843A7DD21FC10594007A1CA4 /* PersonalCollectionViewHeader.swift in Sources */,
+				8485EEC41FA7B611004581A6 /* LoginViewController.swift in Sources */,
+				841FD5261FC6794A00836562 /* Egg.swift in Sources */,
+				845690561FA8EFE2004A8018 /* BasicAuth.swift in Sources */,
+				8485EE961FA7B58E004581A6 /* AppDelegate.swift in Sources */,
+				840374A51FD4A95E006382D5 /* FriendRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8485EEA21FA7B58E004581A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8485EEAB1FA7B58E004581A6 /* MontaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8485EEAD1FA7B58E004581A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8485EEB61FA7B58E004581A6 /* MontaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8485EEA81FA7B58E004581A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8485EE911FA7B58E004581A6 /* Montask */;
+			targetProxy = 8485EEA71FA7B58E004581A6 /* PBXContainerItemProxy */;
+		};
+		8485EEB31FA7B58E004581A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8485EE911FA7B58E004581A6 /* Montask */;
+			targetProxy = 8485EEB21FA7B58E004581A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8485EE991FA7B58E004581A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8485EE9A1FA7B58E004581A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8485EE9E1FA7B58E004581A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8485EE9F1FA7B58E004581A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8485EEB81FA7B58E004581A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8485EEB91FA7B58E004581A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8485EEBB1FA7B58E004581A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05DFAA197CB98898985FBD9E /* Pods-Montask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDYWQEVARC;
+				INFOPLIST_FILE = Montask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.Montask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8485EEBC1FA7B58E004581A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9458112FBEFD8B1823D657A1 /* Pods-Montask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDYWQEVARC;
+				INFOPLIST_FILE = Montask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.Montask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8485EEBE1FA7B58E004581A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C2AD09BF239B67ACA803336 /* Pods-MontaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MontaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.MontaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Montask.app/Montask";
+			};
+			name = Debug;
+		};
+		8485EEBF1FA7B58E004581A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1AAF32B9669D13DCB8757F2 /* Pods-MontaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MontaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.MontaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Montask.app/Montask";
+			};
+			name = Release;
+		};
+		8485EEC11FA7B58E004581A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499BC544351DA31CB61DCA63 /* Pods-MontaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MontaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.MontaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Montask;
+			};
+			name = Debug;
+		};
+		8485EEC21FA7B58E004581A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC2C0D9BB2203B3A50FE41F5 /* Pods-MontaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MontaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MakeSchool.MontaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Montask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8485EE8D1FA7B58E004581A6 /* Build configuration list for PBXProject "Montask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8485EEB81FA7B58E004581A6 /* Debug */,
+				8485EEB91FA7B58E004581A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8485EEBA1FA7B58E004581A6 /* Build configuration list for PBXNativeTarget "Montask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8485EEBB1FA7B58E004581A6 /* Debug */,
+				8485EEBC1FA7B58E004581A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8485EEBD1FA7B58E004581A6 /* Build configuration list for PBXNativeTarget "MontaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8485EEBE1FA7B58E004581A6 /* Debug */,
+				8485EEBF1FA7B58E004581A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8485EEC01FA7B58E004581A6 /* Build configuration list for PBXNativeTarget "MontaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8485EEC11FA7B58E004581A6 /* Debug */,
+				8485EEC21FA7B58E004581A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8485EE8A1FA7B58E004581A6 /* Project object */;
+}

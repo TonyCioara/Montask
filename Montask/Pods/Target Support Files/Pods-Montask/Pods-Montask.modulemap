@@ -1,0 +1,6 @@
+framework module Pods_Montask {
+  umbrella header "Pods-Montask-umbrella.h"
+
+  export *
+  module * { export * }
+}
