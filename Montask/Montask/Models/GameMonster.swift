@@ -11,9 +11,9 @@ import SpriteKit
 
 class GameMonster: SKSpriteNode {
     
-    var health = 300
-    var power = 30
-    var critChance = 30
+    var health = 1
+    var power = 1
+    var critChance = 1
     
     /* You are required to implement this for your subclass to work */
     

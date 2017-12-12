@@ -39,8 +39,8 @@ class GameScene: SKScene {
     var gameRunning = true
     
     let fixedDelta: CFTimeInterval = 1.0 / 60.0
-    let attackFrequency = 2.0
-    var attackTimer = 2.0
+    let attackFrequency = 0.5
+    var attackTimer = 0.5
     let targetSpawnFrequency = 1.0
     var targetSpawnTimer = 1.0
     
@@ -63,10 +63,12 @@ class GameScene: SKScene {
             player1.texture = gameMonster1.texture
             
         }
-        if let gameMonster2 = self.userData?.value(forKey: "gameMonster2") {
+        if let gameMonster2 = self.userData?.value(forKey: "gameMonster2") as? GameMonster {
             //print("gameMonster1 is :\(gameMonster2)")
-            player2 = gameMonster2 as! GameMonster
-            print(player2.texture)
+            player2.power = gameMonster2.power
+            player2.health = gameMonster2.health
+            player2.critChance = gameMonster2.critChance
+            player2.texture = gameMonster2.texture
             
         }
 
@@ -200,8 +202,16 @@ class GameScene: SKScene {
     func botAttackUpdate() {
         attackTimer -= fixedDelta
         if attackTimer <= 0 {
+            
             attackTimer = attackFrequency
-            attack(attacker: player2, defender: player1)
+            let randNum = Int(arc4random_uniform(100))
+            
+            if player2.critChance >= randNum {
+                criticalAttack(attacker: player2, defender: player1)
+            }
+            else {
+                attack(attacker: player2, defender: player1)
+            }
         }
     }
     
