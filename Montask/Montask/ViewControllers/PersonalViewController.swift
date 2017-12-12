@@ -80,21 +80,21 @@ class PersonalViewController: UIViewController, UICollectionViewDelegate, UIColl
         headerView.delegate = self as HeaderviewDelegate
         if self.monsters.count > 0 {
            
-            let topMonsterURL = URL(string: self.topThree[2].imageUrl)
-            headerView.topMonsterImage.kf.setImage(with: topMonsterURL!)
+            let topMonsterURL = self.topThree[2].imageUrl
+            headerView.topMonsterImage.image = UIImage(named: topMonsterURL)
             setViewBorder(view: headerView.topUIView, cornerRadius: 74)
 
         }
         if self.monsters.count > 1 {
 
-            let secondMonsterURL = URL(string: self.topThree[1].imageUrl)
-            headerView.secondMonsterImage.kf.setImage(with: secondMonsterURL!)
+            let secondMonsterURL = self.topThree[1].imageUrl
+            headerView.secondMonsterImage.image = UIImage(named: secondMonsterURL)
             setViewBorder(view: headerView.secondUIView, cornerRadius: 63)
         }
         if self.monsters.count > 2 {
 
-             let thirdMonsterURL = URL(string: self.topThree[0].imageUrl)
-            headerView.thirdMonsterImage.kf.setImage(with: thirdMonsterURL!)
+             let thirdMonsterURL = self.topThree[0].imageUrl
+            headerView.thirdMonsterImage.image = UIImage(named: thirdMonsterURL)
             setViewBorder(view: headerView.thirdUIView, cornerRadius: 63)
         }
         return headerView

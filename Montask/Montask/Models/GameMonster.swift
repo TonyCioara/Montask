@@ -19,8 +19,12 @@ class GameMonster: SKSpriteNode {
     
     init(image: String, health: Int, power: Int, critChance: Int) {
         let texture = SKTexture(imageNamed: image)
-        let color = UIColor.clear
-        let size = texture.size()
+        let color = UIColor.red
+        let size = CGSize(width: 640, height: 520) // texture.size()
+        
+        print("------------------")
+        print(texture)
+        print(size)
         
         super.init(texture: texture, color: color, size: size)
         
@@ -33,6 +37,8 @@ class GameMonster: SKSpriteNode {
     /* You are required to implement this for your subclass to work */
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        
+        
     }
     
 }

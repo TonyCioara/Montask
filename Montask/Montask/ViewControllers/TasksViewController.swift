@@ -91,7 +91,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.descriptionLabel.text = self.sections[indexPath.section].tasks[indexPath.row].description
         if self.sections[indexPath.section].tasks[indexPath.row].completed {
             cell.completedButton.setImage(UIImage(named: "checked"), for: .normal)
-            cell.completedButton.isUserInteractionEnabled = false
+//            cell.completedButton.isUserInteractionEnabled = false
         } else {
             cell.completedButton.setImage(UIImage(named: "blank"), for: .normal)
         }

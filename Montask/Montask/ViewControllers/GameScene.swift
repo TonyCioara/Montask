@@ -9,7 +9,13 @@
 import SpriteKit
 import GameplayKit
 
+protocol GameSceneDelegate {
+    func gameOver()
+}
+
 class GameScene: SKScene {
+    
+    var gameSceneDelegate: GameSceneDelegate? = nil
     
     var player1: GameMonster!
     var player2: GameMonster!
@@ -38,10 +44,32 @@ class GameScene: SKScene {
     let targetSpawnFrequency = 1.0
     var targetSpawnTimer = 1.0
     
+//    override init(monster_1: GameMonster, monster_2: GameMonster) {
+//        super.init(size: CGSize)
+//
+//
+//    }
+    
     override func didMove(to view: SKView) {
+        
         player1 = childNode(withName: "//player1") as! GameMonster
         player2 = childNode(withName: "//player2") as! GameMonster
         
+        if let gameMonster1 = self.userData?.value(forKey: "gameMonster1") as? GameMonster {
+            //print("gameMonster1 is :\(gameMonster1)")
+            player1.power = gameMonster1.power
+            player1.health = gameMonster1.health
+            player1.critChance = gameMonster1.critChance
+            player1.texture = gameMonster1.texture
+            
+        }
+        if let gameMonster2 = self.userData?.value(forKey: "gameMonster2") {
+            //print("gameMonster1 is :\(gameMonster2)")
+            player2 = gameMonster2 as! GameMonster
+            print(player2.texture)
+            
+        }
+
         player1HPLabel = childNode(withName: "//player1HPLabel") as! SKLabelNode
         player2HPLabel = childNode(withName: "//player2HPLabel") as! SKLabelNode
         
@@ -116,6 +144,10 @@ class GameScene: SKScene {
             {
                 hitTarget(target: touchedNode)
             }
+            else if name == "player2"
+            {
+                attack(attacker: player1, defender: player2)
+            }
         }
     }
     
@@ -133,6 +165,10 @@ class GameScene: SKScene {
     
     func attack(attacker: GameMonster, defender: GameMonster) {
         defender.health -= attacker.power
+    }
+    
+    func criticalAttack(attacker: GameMonster, defender: GameMonster) {
+        defender.health -= attacker.power * 2
     }
     
     func win() {
@@ -153,10 +189,10 @@ class GameScene: SKScene {
     }
     
     func gameOverCheck() {
-        if player2.health == 0 {
+        if player2.health <= 0 {
             win()
         }
-        else if player1.health == 0 {
+        else if player1.health <= 0 {
             lose()
         }
     }
@@ -189,7 +225,7 @@ class GameScene: SKScene {
     
     func hitTarget(target: SKNode) {
         target.removeFromParent()
-        attack(attacker: player1, defender: player2)
+        criticalAttack(attacker: player1, defender: player2)
     }
     
     func restartButton() {
@@ -219,7 +255,7 @@ class GameScene: SKScene {
     }
     
     func mainMenuButton() {
-        
+        self.gameSceneDelegate?.gameOver()
     }
     
     func updateLabels() {

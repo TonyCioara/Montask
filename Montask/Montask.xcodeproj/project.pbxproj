@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		213BD29E1FDF22CC00F1C0E9 /* sword@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 213BD29D1FDF22CC00F1C0E9 /* sword@2x.png */; };
 		21DC07171FD9C251008E0306 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC07161FD9C251008E0306 /* GameScene.swift */; };
 		21DC07191FD9C350008E0306 /* GameMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC07181FD9C350008E0306 /* GameMonster.swift */; };
 		21DC071B1FD9C3BE008E0306 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 21DC071A1FD9C3BE008E0306 /* GameScene.sks */; };
@@ -91,6 +92,7 @@
 
 /* Begin PBXFileReference section */
 		05DFAA197CB98898985FBD9E /* Pods-Montask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Montask/Pods-Montask.debug.xcconfig"; sourceTree = "<group>"; };
+		213BD29D1FDF22CC00F1C0E9 /* sword@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sword@2x.png"; sourceTree = "<group>"; };
 		21DC07161FD9C251008E0306 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		21DC07181FD9C350008E0306 /* GameMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMonster.swift; sourceTree = "<group>"; };
 		21DC071A1FD9C3BE008E0306 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				21DC07261FD9C7C2008E0306 /* Defeat Main Menu@2x.png */,
 				21DC07271FD9C7C2008E0306 /* Defeat Restart@2x.png */,
 				21DC07231FD9C7C2008E0306 /* Defeat Title@2x.png */,
+				213BD29D1FDF22CC00F1C0E9 /* sword@2x.png */,
 				21DC07251FD9C7C2008E0306 /* Target@2x.png */,
 				21DC07241FD9C7C2008E0306 /* Victory Main Menu@2x.png */,
 				21DC07211FD9C7C2008E0306 /* Victory Restart@2x.png */,
@@ -501,6 +504,7 @@
 				21DC07481FD9D0D5008E0306 /* Pirate ship export.png in Resources */,
 				21DC07401FD9D0B6008E0306 /* Eye Export.png in Resources */,
 				21DC07411FD9D0B6008E0306 /* Eye Export@2x.png in Resources */,
+				213BD29E1FDF22CC00F1C0E9 /* sword@2x.png in Resources */,
 				21DC07311FD9CFFD008E0306 /* Pirate ship export@3x.png in Resources */,
 				21DC073C1FD9D0AA008E0306 /* Angry Volcano Export@2x.png in Resources */,
 				21DC073D1FD9D0AA008E0306 /* Angry Volcano Export.png in Resources */,

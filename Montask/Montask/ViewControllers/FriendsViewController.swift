@@ -98,16 +98,16 @@ class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewD
             cell.delegate = self
             cell.index = indexPath
             cell.usernameLabel.text = self.friendUsers[indexPath.row].username
-            let monsterImageURL1 = URL(string: self.friendUsers[indexPath.row].monsters[0].imageUrl)
-            cell.monster1Image.kf.setImage(with: monsterImageURL1!)
+            let monsterImageURL1 =  self.friendUsers[indexPath.row].monsters[0].imageUrl
+            cell.monster1Image.image = UIImage(named: monsterImageURL1)
             
             
-            let monsterImageURL2 = URL(string: self.friendUsers[indexPath.row].monsters[1].imageUrl)
-            cell.monster2Image.kf.setImage(with: monsterImageURL2!)
+            let monsterImageURL2 =  self.friendUsers[indexPath.row].monsters[1].imageUrl
+            cell.monster2Image.image = UIImage(named: monsterImageURL2)
             
             
-            let monsterImageURL3 = URL(string: self.friendUsers[indexPath.row].monsters[2].imageUrl)
-            cell.monster3Image.kf.setImage(with: monsterImageURL3!)
+            let monsterImageURL3 = self.friendUsers[indexPath.row].monsters[2].imageUrl
+            cell.monster3Image.image = UIImage(named: monsterImageURL3)
             return cell
         }
         

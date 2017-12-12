@@ -72,12 +72,12 @@ class ArenaViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.indexPath = indexPath
         cell.delegate = self
         cell.usernameLabel.text = self.tableDataUsers[indexPath.row].email
-        let monster1URL = URL(string: self.tableDataUsers[indexPath.row].monsters[0].imageUrl)
-        let monster2URL = URL(string: self.tableDataUsers[indexPath.row].monsters[1].imageUrl)
-        let monster3URL = URL(string: self.tableDataUsers[indexPath.row].monsters[2].imageUrl)
-        cell.monsterImage1.kf.setImage(with: monster1URL)
-        cell.monsterImage2.kf.setImage(with: monster2URL)
-        cell.monsterImage3.kf.setImage(with: monster3URL)
+        let monster1URL = self.tableDataUsers[indexPath.row].monsters[0].imageUrl
+        let monster2URL = self.tableDataUsers[indexPath.row].monsters[1].imageUrl
+        let monster3URL = self.tableDataUsers[indexPath.row].monsters[2].imageUrl
+        cell.monsterImage1.image = UIImage(named: monster1URL)
+        cell.monsterImage2.image = UIImage(named: monster2URL)
+        cell.monsterImage3.image = UIImage(named: monster3URL)
         return cell
     }
     
